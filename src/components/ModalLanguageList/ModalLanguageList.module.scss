@@ -1,0 +1,20 @@
+.modal {
+    width: 100px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.modalContent {
+    
+    & p {
+        font-size: 20px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 5px;
+        padding: 5px 10px 0;
+    }
+    
+    & p:last-child {
+        margin-bottom: 0;
+    }
+}
