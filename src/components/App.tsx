@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { ReactElement, Suspense } from 'react'
 import './App.module.scss'
 import { Header } from './Header/Header'
 
@@ -11,4 +11,10 @@ function App(): ReactElement {
   )
 }
 
-export default App
+export default function WrappedApp() {
+  return (
+    <Suspense fallback='loading...'>
+      <App />
+    </Suspense>
+  );
+}
