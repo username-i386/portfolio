@@ -1,0 +1,47 @@
+{
+    "header": {
+        "navbar": {
+            "homeLink": "Home",
+            "aboutLink": "About",
+            "projectsLink": "Projects",
+            "contactsLink": "Contacts"
+        }
+    },
+    "home": {
+        "bio": {
+            "name": "Eldar Guseynov",
+            "age": "21 y.o. (06.10.2002 DOB)",
+            "location": "Russia, Vladivostok"
+        },
+        "greeting": "Hi there, I’m Eldar. I passionate Frontend React Developer based in Russia, Vladivostok",
+        "techStack": "Tech stack:"
+    },
+    "about": {
+        "title": "About",
+        "subtitle": "A passionate Frontend React Developer, based in Russia, Vladivostok 🧍",
+        "text": "At the moment I am a beginner IT specialist. I have already formed goals that I want to achieve. And one of them is to become a professional Frontend developer. I understand that I am now at the beginning of my journey and I still have a lot to learn, but having a goal, I am ready to learn, develop and devote myself to my favorite business with great passion."
+    },
+    "projects": {
+        "title": "Now you can check out some of my projects 🖥",
+        "todoProject": {
+            "title": "TODO: list📋️",
+            "subtitle": "A simple and convenient tool for creating and managing task lists. With TODO:list you can organize your work and make your life more productive."
+        },
+        "weatherProject": {
+            "title": "Zeus⚡",
+            "subtitle": "Weather is more than just temperature and humidity. This is the mood, energy and atmosphere of every day. With Zeus weather forecast you will always be ready for any changes. Stay up to date with the latest weather news with us!"
+        },
+        "beautySalonProject": {
+            "title": "Beauty Salon💃",
+            "subtitle": "Afrodite is a place where people can get services for hair, nails, skin, etc. The beauty salon offers a variety of treatments such as haircuts, coloring, manicures, pedicures, massages, beauty treatments and much more."
+        }
+    },
+    "contacts": {
+        "title": "Contacts",
+        "text": "Thank you for your interest in my portfolio. If you have any questions for me, please contact me using one of the links."
+    },
+    "footer": {
+        "from": "created by Eldar",
+        "to": "especially for you"
+    }
+}
