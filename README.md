@@ -19,7 +19,7 @@ Link to portfolio site.
 ![CSS Module](https://img.shields.io/badge/CSS_Modules-000000?style=for-the-badge&logo=cssmodules&logoColor=#ffffff)
 
 ## To do
-- [ ] create Header
+- [x] create Header component
 - [ ] create Home component
 - [ ] create About component
 - [ ] create Projects component
