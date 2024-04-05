@@ -1,7 +1,7 @@
 import { FC, ReactElement } from "react";
 import styles from './ChangeLanguage.module.scss';
-import changeLanguagesIcon from '../../assets/changeLanguagesIcon.svg';
-import arrowDown from '../../assets/arrowDown.svg';
+import changeLanguagesIcon from '../../assets/icons/changeLanguagesIcon.svg';
+import arrowDown from '../../assets/icons/arrowDown.svg';
 import { ModalLanguageList } from "../ModalLanguageList/ModalLanguageList";
 import { useModal } from "../ModalLanguageList/ModalContext";
 
