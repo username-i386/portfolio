@@ -1,32 +1,33 @@
-import { Dispatch, FC, ReactElement, SetStateAction } from "react";
+import { FC, ReactElement } from "react";
 import styles from './ModalLanguageList.module.scss';
 import { useTranslation } from "react-i18next";
+import { useModal } from "./ModalContext";
 
-type Props = {
-    isOpen: boolean
-    onToggle: Dispatch<SetStateAction<boolean>>
-}
+export const ModalLanguageList: FC = (): ReactElement => {
 
-export const ModalLanguageList: FC<Props> = (props): ReactElement => {
-
-    const { isOpen, onToggle } = props;
-    
     const { i18n } = useTranslation();
 
-
+    const { isOpen } = useModal();
+    
     if (!isOpen) return <></>;
 
     function changedWebSiteLanguage(event: React.MouseEvent<HTMLParagraphElement>) {
         const target = event.target as HTMLParagraphElement;
         
         switch(target.id) {
-            case 'ru': i18n.changeLanguage('ru'); break;
+            case 'ru': 
+                if (i18n.language !== 'ru') {
+                    i18n.changeLanguage('ru'); 
+                }
+                break;
+
             case 'en': 
-            default: i18n.changeLanguage('en'); break;
-        }
-        console.log('123');
-        
-        onToggle(false);
+            default: 
+                if (i18n.language !== 'en') {
+                    i18n.changeLanguage('en'); 
+                }
+                break;
+        };
     }
 
     return (

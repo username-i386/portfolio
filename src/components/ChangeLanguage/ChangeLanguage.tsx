@@ -1,25 +1,22 @@
-import { FC, ReactElement, useState } from "react";
+import { FC, ReactElement } from "react";
 import styles from './ChangeLanguage.module.scss';
 import changeLanguagesIcon from '../../assets/changeLanguagesIcon.svg';
 import arrowDown from '../../assets/arrowDown.svg';
-import { useTranslation } from "react-i18next";
 import { ModalLanguageList } from "../ModalLanguageList/ModalLanguageList";
+import { useModal } from "../ModalLanguageList/ModalContext";
+
 
 export const ChangeLanguage: FC = (): ReactElement => {
 
-    const { t } = useTranslation();
-
-    const [open, setOpen] = useState<boolean>(true);
-
-    const onOpenModal = () => setOpen(true);
+    const { onToggle } = useModal();
 
     return (
-        <div className={styles.changeLanguage} >
-            <div onClick={onOpenModal}>
-                <img className={styles.changeLanguageIcon} src={changeLanguagesIcon} alt='change language' />
-                <img className={styles.changeLanguageArrowDown} src={arrowDown} alt='change language' />
+        <div className={styles.changeLanguage}>
+            <div id='changeLanguage' onClick={() => onToggle()}>
+                <img id='changeLanguage' className={styles.changeLanguageIcon} src={changeLanguagesIcon} alt='change language' />
+                <img id='changeLanguage' className={styles.changeLanguageArrowDown} src={arrowDown} alt='change language' />
             </div>
-            <ModalLanguageList isOpen={open} onToggle={setOpen} />
+            <ModalLanguageList />
         </div>
     )
 }
