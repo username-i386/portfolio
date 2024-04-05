@@ -1,0 +1,12 @@
+.navbar {
+    list-style: none;
+    display: flex;
+
+    & li {
+        margin-right: 25px;
+    }
+
+    & li:last-child {
+        margin-right: 0;
+    }
+}
