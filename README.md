@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Eldar Guseynov
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi there, I'm Frontend React Developer. Here you can see my portfolio
 
-Currently, two official plugins are available:
+## Preview
+<!-- Add link and preview image -->
+Link to portfolio site.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Content
+1) Tech Stack
+2) To do
+3) Team
+4) Source
 
-## Expanding the ESLint configuration
+## Tech Stack
+![React](https://img.shields.io/badge/React-286171?style=for-the-badge&logo=react&logoColor=#61DBFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-104581?style=for-the-badge&logo=typescript&logoColor=#3178C6)
+![CSS](https://img.shields.io/badge/CSS-1572B7?style=for-the-badge&logo=css3&logoColor=#1572B7)
+![CSS Module](https://img.shields.io/badge/CSS_Modules-000000?style=for-the-badge&logo=cssmodules&logoColor=#ffffff)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## To do
+- [ ] create Header
+- [ ] create Home component
+- [ ] create About component
+- [ ] create Projects component
+- [ ] create Contacts component
 
-- Configure the top-level `parserOptions` property like this:
+## Team
+[![me](https://img.shields.io/badge/Eldar_Guseynov-black?style=for-the-badge&logo=github)](https://github.com/username-i386/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Source
+<!-- add projects links -->
