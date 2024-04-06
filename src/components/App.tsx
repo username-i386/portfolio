@@ -3,6 +3,7 @@ import styles from './App.module.scss';
 import { Header } from './Header/Header';
 import { useModal } from './ModalLanguageList/ModalContext';
 import { Home } from './Home/Home';
+import { About } from './About/About';
 
 function App(): ReactElement {
 
@@ -20,6 +21,7 @@ function App(): ReactElement {
       <Header />
       <div className={styles.container}>
         <Home />
+        <About />
       </div>
     </div>
   );
