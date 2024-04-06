@@ -45,10 +45,10 @@
     },
     "contacts": {
         "title": "Contacts",
-        "text": "Thank you for your interest in my portfolio. If you have any questions for me, please contact me using one of the links."
-    },
-    "footer": {
-        "from": "created by Eldar",
-        "to": "especially for you"
+        "text": {
+            "first": "Thank you for your interest in my portfolio.",
+            "second": "If you have any questions for me,",
+            "third": "please contact me using one of the links."
+        }
     }
 }
