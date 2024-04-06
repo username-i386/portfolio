@@ -1,0 +1,24 @@
+.contacts {
+    display: flex;
+}
+
+.contactsItem {
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    
+    & p, a {
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+.contactsLinks {
+    text-align: right;
+
+    & a {
+        text-decoration: underline;
+    }
+}
