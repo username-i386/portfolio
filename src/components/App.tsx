@@ -1,7 +1,8 @@
-import { ReactElement, Suspense } from 'react'
-import './App.module.scss'
-import { Header } from './Header/Header'
+import { ReactElement, Suspense } from 'react';
+import styles from './App.module.scss';
+import { Header } from './Header/Header';
 import { useModal } from './ModalLanguageList/ModalContext';
+import { Home } from './Home/Home';
 
 function App(): ReactElement {
 
@@ -17,8 +18,11 @@ function App(): ReactElement {
   return (
     <div onClick={(e) => closeModal(e)}>
       <Header />
+      <div className={styles.container}>
+        <Home />
+      </div>
     </div>
-  )
+  );
 }
 
 export default function WrappedApp() {
