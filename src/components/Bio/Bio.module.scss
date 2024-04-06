@@ -1,0 +1,32 @@
+.bio {
+    margin-left: 20px;
+}
+
+.avatar {
+    & img {
+        width: 315px;
+        height: 336px;
+        border-radius: 50px;
+    }
+}
+
+.name {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.bioAttribute {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    
+    & img {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+
+    & span {
+        color: #876464;
+    }
+}
