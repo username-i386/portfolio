@@ -10,10 +10,16 @@
     "home": {
         "bio": {
             "name": "Eldar Guseynov",
-            "age": "21 y.o. (06.10.2002 DOB)",
+            "age": {
+                "now": "21 y.o.",
+                "born": "(06.10.2002 DOB)"
+            },
             "location": "Russia, Vladivostok"
         },
-        "greeting": "Hi there, I’m Eldar. I passionate Frontend React Developer based in Russia, Vladivostok",
+        "greeting": {
+            "first": "Hi there, I’m Eldar.",
+            "second": "I passionate Frontend React Developer based in Russia, Vladivostok."
+        },
         "techStack": "Tech stack:"
     },
     "about": {
