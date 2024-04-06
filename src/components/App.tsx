@@ -5,6 +5,8 @@ import { useModal } from './ModalLanguageList/ModalContext';
 import { Home } from './Home/Home';
 import { About } from './About/About';
 import { ProjectsList } from './Projects/ProjectsList';
+import { Contacts } from './Contacts/Contacts';
+import { Footer } from './Footer/Footer';
 
 function App(): ReactElement {
 
@@ -24,7 +26,9 @@ function App(): ReactElement {
         <Home />
         <About />
         <ProjectsList />
+        <Contacts />
       </div>
+      <Footer />
     </div>
   );
 }
