@@ -28,7 +28,8 @@
         "text": "At the moment I am a beginner IT specialist. I have already formed goals that I want to achieve. And one of them is to become a professional Frontend developer. I understand that I am now at the beginning of my journey and I still have a lot to learn, but having a goal, I am ready to learn, develop and devote myself to my favorite business with great passion."
     },
     "projects": {
-        "title": "Now you can check out some of my projects 🖥",
+        "title": "Projects",
+        "subtitle": "Now you can check out some of my projects 🖥",
         "todoProject": {
             "title": "TODO: list📋️",
             "subtitle": "A simple and convenient tool for creating and managing task lists. With TODO:list you can organize your work and make your life more productive."
