@@ -1,6 +1,6 @@
 .projectListSubtitle {
     font-weight: 800;
-    margin-bottom: 60px;
+    margin: 10px 0 40px;
 }
 
 .projectList {
@@ -33,6 +33,7 @@
         background: lightblue;
         padding: 5px 10px;
         border-radius: 25px;
+        font-size: 20px;
     }
 }
 
@@ -43,7 +44,6 @@
     justify-content: space-between;
     gap: 10px 0;
     font-weight: 800;
-    font-size: 24px;
     text-align: center;
 }
 
@@ -66,6 +66,10 @@
     & a {
         display: flex;
         align-items: center;
+        
+        & p {
+            font-size: 20px;
+        }
     }
 
     & img {
