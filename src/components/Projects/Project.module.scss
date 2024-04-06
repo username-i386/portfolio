@@ -1,0 +1,80 @@
+.projectListSubtitle {
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 75px 0 ;
+}
+
+.project {
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+}
+
+.previewImg {
+    & img {
+        width: 540px;
+        height: 360px;
+        border-radius: 50px;
+    }
+}
+
+.projectSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+
+    & p {
+        background: lightblue;
+        padding: 5px 10px;
+        border-radius: 25px;
+    }
+}
+
+.projectInfo {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px 0;
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+}
+
+.projectTitle {
+    font-weight: 800;
+    font-size: 30px;    
+}
+
+.projectSubtitle {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.projectLinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    & a {
+        display: flex;
+        align-items: center;
+    }
+
+    & img {
+        width: 30px;
+        height: 30px;
+        margin-left: 2px;
+    }
+}
+
+.unable {
+    display: none;
+}

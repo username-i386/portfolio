@@ -4,6 +4,7 @@ import { Header } from './Header/Header';
 import { useModal } from './ModalLanguageList/ModalContext';
 import { Home } from './Home/Home';
 import { About } from './About/About';
+import { ProjectsList } from './Projects/ProjectsList';
 
 function App(): ReactElement {
 
@@ -12,7 +13,7 @@ function App(): ReactElement {
   function closeModal(event: React.MouseEvent<HTMLDivElement>) {
     const target = event.target as HTMLElement;
     if (target.id !== 'changeLanguage') {
-        onClose();
+      onClose();
     }
   }
 
@@ -22,6 +23,7 @@ function App(): ReactElement {
       <div className={styles.container}>
         <Home />
         <About />
+        <ProjectsList />
       </div>
     </div>
   );
