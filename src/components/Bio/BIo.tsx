@@ -1,7 +1,6 @@
 import { FC, ReactElement } from "react";
 import styles from './Bio.module.scss';
-import mock from '../../assets/images/mockImg.jpg';
-// import avatar from '../../assets/images/avatar.jpg';
+import avatar from '../../assets/images/avatar.jpg';
 import dateIcon from '../../assets/icons/dateIcon.svg';
 import locationIcon from '../../assets/icons/locationIcon.svg';
 import { useTranslation } from "react-i18next";
@@ -23,7 +22,7 @@ export const Bio: FC = (): ReactElement => {
     return (
         <div>
             <div className={styles.avatar}>
-                <img src={mock} alt='avatar' />
+                <img src={avatar} alt='avatar' />
             </div>
             <div  className={styles.bio}>
                 <h2 className={styles.name}>{bioTxt.name}</h2>
@@ -39,7 +38,6 @@ export const Bio: FC = (): ReactElement => {
                 </div>
                 <SocialIcon direction='h' />
             </div>
-            
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import { FC, ReactElement } from "react";
 import styles from "./About.module.scss";
 import { useTranslation } from "react-i18next";
-import mockImg from "../../assets/images/mockImg.jpg";
+import aboutImg from "../../assets/images/aboutImg.png";
 
 export const About: FC = (): ReactElement => {
 
@@ -16,7 +16,7 @@ export const About: FC = (): ReactElement => {
     return (
         <div className={styles.about}>
             <div>
-                <img src={mockImg} alt='about me' />
+                <img src={aboutImg} alt='about me' />
             </div>
             <div className={styles.aboutText}>
                 <h2 className='sectionTitle'>

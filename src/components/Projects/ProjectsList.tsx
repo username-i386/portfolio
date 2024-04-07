@@ -1,7 +1,9 @@
 import { FC, ReactElement } from "react";
 import styles from './Project.module.scss';
 import { useTranslation } from "react-i18next";
-import mockImg from '../../assets/images/mockImg.jpg'
+import afroditePreview from '../../assets/images/adrodite_PC.png';
+import todoPreview from '../../assets/images/todo_PC_dark.png';
+import zeusPreview from '../../assets/images/zeus_PC_dark.png';
 import { Project } from "./Project";
 
 
@@ -16,7 +18,7 @@ export const ProjectsList: FC = (): ReactElement => {
             skills: [ 'React', 'TypeScript', 'Redux', 'Chakra UI' ],
             codeLink: 'https://github.com/username-i386/todo--list',
             demoLink: 'https://todo-list-iota-gilt.vercel.app/',
-            img: mockImg,
+            img: todoPreview,
         },
         {
             title: t('projects.weatherProject.title'),
@@ -24,7 +26,7 @@ export const ProjectsList: FC = (): ReactElement => {
             skills: [ 'React', 'TypeScript', 'Redux', 'RTK Query', 'Chakra UI' ],
             codeLink: 'https://github.com/username-i386/weather',
             demoLink: 'https://weather-gray-five.vercel.app/',
-            img: mockImg,
+            img: zeusPreview,
         },
         {
             title: t('projects.beautySalonProject.title'),
@@ -32,7 +34,7 @@ export const ProjectsList: FC = (): ReactElement => {
             skills: [ 'React', 'TypeScript', 'Chakra UI', 'MUI', 'Styled Components', 'CSS', 'CSS Modules' ],
             codeLink: 'https://github.com/username-i386/beauty_salon',
             demoLink: 'https://aphrodite-nu.vercel.app/',
-            img: mockImg,
+            img: afroditePreview,
         },
     ];
 
