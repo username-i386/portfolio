@@ -8,10 +8,10 @@ export const NavBar: FC = (): ReactElement => {
     const { t } = useTranslation();
 
     const navLinks = [
-        { url: '#', text: t('header.navbar.homeLink') },
-        { url: '#', text: t('header.navbar.aboutLink') },
-        { url: '#', text: t('header.navbar.projectsLink') },
-        { url: '#', text: t('header.navbar.contactsLink') },
+        { url: '#home', text: t('header.navbar.homeLink') },
+        { url: '#about', text: t('header.navbar.aboutLink') },
+        { url: '#projects', text: t('header.navbar.projectsLink') },
+        { url: '#contacts', text: t('header.navbar.contactsLink') },
     ];
 
     return (

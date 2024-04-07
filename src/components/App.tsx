@@ -23,9 +23,13 @@ function App(): ReactElement {
     <div onClick={(e) => closeModal(e)}>
       <Header />
       <div className={styles.container}>
+        <div  id='home'></div>
         <Home />
+        <div  id='about'></div>
         <About />
+        <div  id='projects'></div>
         <ProjectsList />
+        <div  id='contacts'></div>
         <Contacts />
       </div>
       <Footer />
