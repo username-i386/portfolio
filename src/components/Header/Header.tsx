@@ -8,7 +8,9 @@ export const Header: FC = (): ReactElement => {
     return (
         <header className={styles.header}>
             <div className={styles.title}>
-                <a href='#'>Eldar.portfolio</a>
+                <a href='https://github.com/username-i386' target='_blank'>
+                    Eldar.portfolio
+                </a>
                 <ChangeLanguage />
             </div>
             <NavBar />
