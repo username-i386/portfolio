@@ -17,13 +17,7 @@ Link to portfolio site.
 ![TypeScript](https://img.shields.io/badge/TypeScript-104581?style=for-the-badge&logo=typescript&logoColor=#3178C6)
 ![CSS](https://img.shields.io/badge/CSS-1572B7?style=for-the-badge&logo=css3&logoColor=#1572B7)
 ![CSS Module](https://img.shields.io/badge/CSS_Modules-000000?style=for-the-badge&logo=cssmodules&logoColor=#ffffff)
-
-## To do
-- [x] create Header component
-- [ ] create Home component
-- [ ] create About component
-- [ ] create Projects component
-- [ ] create Contacts component
+![Framer Motion](https://img.shields.io/badge/Framer_motion-0055FF?style=for-the-badge&logo=framer&logoColor=#fff)
 
 ## Team
 [![me](https://img.shields.io/badge/Eldar_Guseynov-black?style=for-the-badge&logo=github)](https://github.com/username-i386/)
