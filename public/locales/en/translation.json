@@ -17,8 +17,9 @@
             "location": "Russia, Vladivostok"
         },
         "greeting": {
-            "first": "Hi there, I’m Eldar.",
-            "second": "I passionate Frontend React Developer based in Russia, Vladivostok."
+            "first": "Hi there👋 My name is Eldar Guseinov.",
+            "second": "I am doing frontend react development",
+            "third": "and currently actively looking for a job."
         },
         "techStack": "Tech stack:"
     },
