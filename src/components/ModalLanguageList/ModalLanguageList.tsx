@@ -2,6 +2,8 @@ import { FC, ReactElement } from "react";
 import styles from './ModalLanguageList.module.scss';
 import { useTranslation } from "react-i18next";
 import { useModal } from "./ModalContext";
+import { motion, AnimatePresence } from 'framer-motion';
+
 
 export const ModalLanguageList: FC = (): ReactElement => {
 
@@ -9,7 +11,7 @@ export const ModalLanguageList: FC = (): ReactElement => {
 
     const { isOpen } = useModal();
     
-    if (!isOpen) return <></>;
+    // if (!isOpen) return <></>;
 
     function changedWebSiteLanguage(event: React.MouseEvent<HTMLParagraphElement>) {
         const target = event.target as HTMLParagraphElement;
@@ -30,12 +32,49 @@ export const ModalLanguageList: FC = (): ReactElement => {
         };
     }
 
+    const modalAnim = {
+        hidden: {
+            opacity: 0,
+            y: -50,
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+        },
+        exit: {
+            opacity: 0,
+            y: 100,
+        },
+    };
+
     return (
-        <div className={styles.modal}>
-            <div className={styles.modalContent}>
-                <p id='en' onClick={e => changedWebSiteLanguage(e)}>English</p>
-                <p id='ru' onClick={e => changedWebSiteLanguage(e)}>Русский</p>
-            </div>
-        </div>
+        <AnimatePresence>
+            {isOpen ? 
+                <motion.div key='modal'
+                    className={styles.modal}
+                    initial='hidden'
+                    animate='visible'
+                    exit='exit'
+                >
+                    <div className={styles.modalContent}>
+                        <motion.p id='en' 
+                            onClick={e => changedWebSiteLanguage(e)}
+                            variants={modalAnim}
+                            transition={{ delay: 0.15 }}
+                        >
+                            English
+                        </motion.p>
+                        <motion.p id='ru' 
+                            onClick={e => changedWebSiteLanguage(e)}
+                            variants={modalAnim}
+                            transition={{ delay: 0.1 }}
+                        >
+                            Русский
+                        </motion.p>
+                    </div>
+                </motion.div>
+                : <></>
+            }
+        </AnimatePresence>
     )
 }

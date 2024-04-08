@@ -2,6 +2,7 @@ import { FC, ReactElement } from "react";
 import styles from './Project.module.scss';
 import githubIcon from '../../assets/icons/githubIcon.svg';
 import linkExternalIcon from '../../assets/icons/linkExternalIcon.svg';
+import { motion } from "framer-motion";
 
 type Props = {
     imagePosition: 'left' | 'right'
@@ -20,7 +21,12 @@ export const Project: FC<Props> = (props): ReactElement => {
     const { imagePosition, project } = props;
 
     return (
-        <div className={styles.project}>
+        <motion.div className={styles.project}
+            initial={{ x: imagePosition === 'left' ? 100 : -10, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 1.5}}
+            viewport={{ once: true }}
+        >
             <div className={imagePosition === 'right' ? styles.unable : ''}>
                 <div className={styles.previewImg}>
                     <img src={project.img} alt="preview" />
@@ -60,6 +66,6 @@ export const Project: FC<Props> = (props): ReactElement => {
                     <img src={project.img} alt="preview" />
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

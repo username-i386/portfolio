@@ -10,6 +10,7 @@ import tsIcon from '../../assets/icons/typescriptIcon.svg';
 import reactIcon from '../../assets/icons/reactIcon.svg';
 import reduxIcon from '../../assets/icons/reduxIcon.svg';
 import chakraIcon from '../../assets/icons/chakrauiIcon.svg';
+import { motion } from "framer-motion";
 
 
 export const TechStack: FC = (): ReactElement => {
@@ -18,22 +19,36 @@ export const TechStack: FC = (): ReactElement => {
 
     const techStackTxt = t('home.techStack');
 
+    const textStackImg = [
+        { src: htmlIcon, alt: 'html' },
+        { src: cssIcon, alt: 'css' },
+        { src: sassIcon, alt: 'sass' },
+        { src: cssModulesIcon, alt: 'css modules' },
+        { src: jsIcon, alt: 'js' },
+        { src: tsIcon, alt: 'ts' },
+        { src: reactIcon, alt: 'react' },
+        { src: reduxIcon, alt: 'redux' },
+        { src: chakraIcon, alt: 'chakra' },
+    ];
+
     return (
         <div className={styles.techStack}>
             <h3 className={styles.techStackTitle}>
                 {techStackTxt}
             </h3>
             <div className={styles.techStackIcons}>
-                <img src={htmlIcon} alt='html' />
-                <img src={cssIcon} alt='css' />
-                <img src={sassIcon} alt='sass' />
-                <img src={cssModulesIcon} alt='css modules' />
-                <img src={jsIcon} alt='js' />
-                <img src={tsIcon} alt='ts' />
-                <img src={reactIcon} alt='react' />
-                <img src={reduxIcon} alt='redux' />
-                <img src={chakraIcon} alt='chakra' />
+                {textStackImg.map(((techImg, index) => {
+                    return (
+                        <motion.img key={index} 
+                            src={techImg.src} 
+                            alt={techImg.alt}  
+                            initial={{ x: 200, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ delay: index / 5 }}
+                        />
+                    );
+                }))}
             </div>
-        </div>
+        </div>  
     )
 }
