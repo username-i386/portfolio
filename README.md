@@ -4,13 +4,12 @@ Hi there, I'm Frontend React Developer. Here you can see my portfolio
 
 ## Preview
 <!-- Add link and preview image -->
-Link to portfolio site.
-
+[Link](https://portfolio-zeta-lac-72.vercel.app/) to portfolio site.
+[![Preview](https://github.com/username-i386/portfolio/blob/main/src/assets/images/portfolio_preview_en.png)](https://portfolio-zeta-lac-72.vercel.app/)
 ## Content
 1) Tech Stack
-2) To do
-3) Team
-4) Source
+2) Team
+3) Source
 
 ## Tech Stack
 ![React](https://img.shields.io/badge/React-286171?style=for-the-badge&logo=react&logoColor=#61DBFB)
