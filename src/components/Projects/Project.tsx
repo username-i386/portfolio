@@ -23,10 +23,22 @@ export const Project: FC<Props> = (props): ReactElement => {
 
     const { windowWidth } = useResize();
 
+    const projectAnim = {
+        hidden: {
+            y: 100,
+            opacity: 0,
+        },
+        visible: {
+            y: 0,
+            opacity: 1,
+        },
+    };
+
     return (
         <motion.div className={styles.project}
-            initial={{ x: imagePosition === 'left' ? 100 : -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial='hidden'
+            whileInView='visible'
+            variants={projectAnim}
             transition={{ delay: 0.1, duration: 1.5}}
             viewport={{ once: true }}
         >
