@@ -1,9 +1,14 @@
 .contacts {
     display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.contactsTitle {
+    padding: 5px;
 }
 
 .contactsItem {
-    width: 50%;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -20,5 +25,35 @@
 
     & a {
         text-decoration: underline;
+    }
+}
+
+@media(max-width: 950px) {
+    .contactsTitle {
+        text-align: center;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 502px) {
+    .contactsItem p,
+    .contactsLinks a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 350px) {
+    .contactsItem,
+    .contactsLinks {
+        text-align: center;
+    }
+
+    .contactsItem {
+        flex-direction: column;
+        gap: 10px 0;
     }
 }

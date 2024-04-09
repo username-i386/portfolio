@@ -30,9 +30,9 @@ function App(): ReactElement {
         <div  id='projects'></div>
         <ProjectsList />
         <div  id='contacts'></div>
-        <Contacts />
+        <Contacts /> 
       </div>
-      <Footer />
+      <Footer /> 
     </div>
   );
 }

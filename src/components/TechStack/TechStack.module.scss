@@ -1,9 +1,11 @@
 .techStack {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 15px 30px;
+    flex-wrap: wrap;
     margin-top: 100px;
-    gap: 0 30px;
+    padding: 0 10px;
 }
 
 .techStackTitle {
@@ -14,13 +16,19 @@
 }
 
 .techStackIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 12px;
+    justify-content: center;
+
     & img {
         width: 50px;
         height: 50px;
-        margin-right: 12px;
     }
+}
 
-    & img:last-child {
-        margin-right: 0;
+@media(max-width: 360px) {
+    .techStack {
+        margin-top: 30px;
     }
 }

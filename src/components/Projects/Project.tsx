@@ -3,6 +3,7 @@ import styles from './Project.module.scss';
 import githubIcon from '../../assets/icons/githubIcon.svg';
 import linkExternalIcon from '../../assets/icons/linkExternalIcon.svg';
 import { motion } from "framer-motion";
+import { useResize } from "../../hooks/useResize";
 
 type Props = {
     imagePosition: 'left' | 'right'
@@ -20,14 +21,16 @@ export const Project: FC<Props> = (props): ReactElement => {
     
     const { imagePosition, project } = props;
 
+    const { windowWidth } = useResize();
+
     return (
         <motion.div className={styles.project}
-            initial={{ x: imagePosition === 'left' ? 100 : -10, opacity: 0 }}
+            initial={{ x: imagePosition === 'left' ? 100 : -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.1, duration: 1.5}}
             viewport={{ once: true }}
         >
-            <div className={imagePosition === 'right' ? styles.unable : ''}>
+            <div className={(windowWidth <= 970 || imagePosition === 'left') ? '' : styles.unable}>
                 <div className={styles.previewImg}>
                     <img src={project.img} alt="preview" />
                 </div>
@@ -61,7 +64,7 @@ export const Project: FC<Props> = (props): ReactElement => {
                     </a>
                 </div>
             </div>
-            <div className={imagePosition === 'left' ? styles.unable : ''}>
+            <div className={(windowWidth > 970 && imagePosition === 'right') ? '' : styles.unable}>
                 <div className={styles.previewImg}>
                     <img src={project.img} alt="preview" />
                 </div>

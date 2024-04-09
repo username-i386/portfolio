@@ -16,3 +16,11 @@
     gap: 10px;
     padding-left: 15px;
 }
+
+@media(max-width: 450px) {
+    .title {
+        & span {
+            display: none;
+        }
+    }
+}

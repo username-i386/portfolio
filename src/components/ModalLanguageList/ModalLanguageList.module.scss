@@ -1,7 +1,7 @@
 .modal {
     position: absolute;
     top: 30px;
-    left: -0;
+    right: 0;
 }
 
 .modalContent {
@@ -15,9 +15,15 @@
         margin-bottom: 5px;
         padding: 5px 10px;
         background: white;
-}
+    }
     
     & p:last-child {
         margin-bottom: 0;
+    }
+}
+
+@media(max-width: 450px) {
+    .modal {
+        right: 70%;
     }
 }

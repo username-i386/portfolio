@@ -2,9 +2,12 @@ import { FC, ReactElement } from "react";
 import styles from './Contacts.module.scss';
 import { useTranslation } from "react-i18next";
 import { SocialIcon } from "../SocialIcons/SocialIcon";
+import { useResize } from "../../hooks/useResize";
 
 
 export const Contacts: FC = (): ReactElement => {
+
+    const { windowWidth } = useResize();
 
     const { t } = useTranslation();
 
@@ -17,14 +20,16 @@ export const Contacts: FC = (): ReactElement => {
         },
     };
 
+    const socialIconDirection = (windowWidth > 350) ? 'v' : 'h';
+
     return (
         <div>
-            <h2 className='sectionTitle'>
+            <h2 className={['sectionTitle', styles.contactsTitle].join(' ')}>
                 {contactsTxt.title}
             </h2>
             <div className={styles.contacts}>
                 <div className={styles.contactsItem}>
-                    <SocialIcon direction='v' />
+                    <SocialIcon direction={socialIconDirection} />
                     <div>
                         <p>
                             {contactsTxt.text.first}
@@ -49,7 +54,7 @@ export const Contacts: FC = (): ReactElement => {
                             Telegram: <a href='https://t.me/red_chupic'>https://t.me/red_chupic</a>
                         </p>
                     </div>
-                    <SocialIcon direction='v' />
+                    <SocialIcon direction={socialIconDirection} />
                 </div>
             </div>
         </div>

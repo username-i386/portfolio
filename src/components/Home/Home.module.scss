@@ -11,4 +11,16 @@
     justify-content: space-between;
     align-items: center;
     width: 880px;
+    padding: 10px;
+}
+
+@media(max-width: 925px) {
+    .home {
+        height: 100%;
+    }
+
+    .homeContainer {
+        width: auto;    
+        flex-direction: column;
+    }
 }

@@ -36,7 +36,9 @@ export const Bio: FC = (): ReactElement => {
                     <img src={locationIcon} alt='location' />
                     <p>{bioTxt.location}</p>
                 </div>
-                <SocialIcon direction='h' />
+                <div className={styles.bioSocialIcon}>
+                    <SocialIcon direction='h' />
+                </div>
             </div>
         </div>
     )

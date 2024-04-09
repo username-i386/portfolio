@@ -1,6 +1,7 @@
 .projectListSubtitle {
     font-weight: 800;
     margin: 10px 0 40px;
+    padding: 0 5px;
 }
 
 .projectList {
@@ -13,6 +14,9 @@
     display: flex;
     justify-content: space-around;
     align-items: normal;
+    flex-wrap: wrap-reverse;
+    gap: 10px 0;
+    padding: 5px;
 }
 
 .previewImg {
@@ -81,4 +85,29 @@
 
 .unable {
     display: none;
+}
+
+@media(max-width: 580px) {
+    .previewImg {
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    .projectListSubtitle {
+        font-size: 20px;
+    }
+
+    .projectTitle {
+        font-size: 24px;
+    }
+
+    .projectSubtitle, 
+    .projectSkills > p, 
+    .projectLinks > a > p {
+        font-size: 18px;
+    }
 }

@@ -19,3 +19,32 @@
     font-size: 16px;
     line-height: 19px;
 }
+
+@media(max-width: 925px) {
+    .greet {
+        transform: translate(0, 0);
+    }
+}
+
+@media(max-width: 925px) {
+    .jobTitle {
+        text-align: center;
+    }
+
+    .greeting {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 360px) {
+    .jobTitle {
+        & span {
+            font-size: 44px;
+        }
+    }
+
+    .greeting {
+        font-size: 14px;
+    }
+}

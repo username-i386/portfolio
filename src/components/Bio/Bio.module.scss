@@ -64,3 +64,42 @@ $avatarHeight: 336px;
         color: #876464;
     }
 }
+
+@media(max-width: 360px) {
+    .bio {
+        margin: 0 0 15px 0;
+    }
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+
+        & img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .bioAttribute {
+        & img {
+            width: 18px;
+            height: 18px;
+        }
+
+        & p {
+            font-size: 20px;
+        }
+
+        & span {
+            font-size: 20px;
+        }
+    }
+
+    .bioSocialIcon {
+        display: none;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+}
