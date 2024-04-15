@@ -23,7 +23,7 @@ export const SocialIcon: FC<Props> = ({ direction }): ReactElement => {
             <a href='mailto:guseynoveldar3@gmail.com'>
                 <img src={gmailIcon} alt='gmail icon' />
             </a>
-            <a href='https://t.me/red_chupic' target='_blank'>
+            <a href='https://t.me/eldar_guseyn0v' target='_blank'>
                 <img src={telegramIcon} alt='telegram icon' />
             </a>
         </div>
