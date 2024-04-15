@@ -51,7 +51,7 @@ export const Contacts: FC = (): ReactElement => {
                             Mail: <a href='mailto:guseynoveldar3@gmail.com'>guseynoveldar3@gmail.com</a>
                         </p>
                         <p>
-                            Telegram: <a href='https://t.me/red_chupic'>https://t.me/red_chupic</a>
+                            Telegram: <a href='https://t.me/eldar_guseyn0v'>https://t.me/red_chupic</a>
                         </p>
                     </div>
                     <SocialIcon direction={socialIconDirection} />
