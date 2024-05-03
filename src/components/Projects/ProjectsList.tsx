@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import afroditePreview from '../../assets/images/adrodite_PC.png';
 import todoPreview from '../../assets/images/todo_PC_dark.png';
 import zeusPreview from '../../assets/images/zeus_PC_dark.png';
+import labaMoviePreview from '../../assets/images/labaMovie_preview.png';
 import { Project } from "./Project";
 
 
@@ -27,6 +28,14 @@ export const ProjectsList: FC = (): ReactElement => {
             codeLink: 'https://github.com/username-i386/weather',
             demoLink: 'https://weather-gray-five.vercel.app/',
             img: zeusPreview,
+        },
+        {
+            title: t('projects.movieProject.title'),
+            subtitle: t('projects.movieProject.subtitle'),
+            skills: [ 'React', 'TypeScript', 'React Router DOM', 'Redux', 'RTK Query', 'SASS', 'CSS Modules' ],
+            codeLink: 'https://github.com/username-i386/laba_movie',
+            demoLink: 'https://laba-movie.vercel.app',
+            img: labaMoviePreview,
         },
         {
             title: t('projects.beautySalonProject.title'),
