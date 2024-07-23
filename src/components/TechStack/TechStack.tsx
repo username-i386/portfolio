@@ -5,9 +5,11 @@ import htmlIcon from '../../assets/icons/html5Icon.svg';
 import cssIcon from '../../assets/icons/css3Icon.svg';
 import sassIcon from '../../assets/icons/sassIcon.svg';
 import cssModulesIcon from '../../assets/icons/cssmodules.svg';
+import tailwindIcon from '../../assets/icons/tailwindIcon.svg';
 import jsIcon from '../../assets/icons/javascriptIcon.svg';
 import tsIcon from '../../assets/icons/typescriptIcon.svg';
 import reactIcon from '../../assets/icons/reactIcon.svg';
+import nextJsIcon from '../../assets/icons/nextJsIcon.svg';
 import reduxIcon from '../../assets/icons/reduxIcon.svg';
 import chakraIcon from '../../assets/icons/chakrauiIcon.svg';
 import { motion } from "framer-motion";
@@ -24,9 +26,11 @@ export const TechStack: FC = (): ReactElement => {
         { src: cssIcon, alt: 'css' },
         { src: sassIcon, alt: 'sass' },
         { src: cssModulesIcon, alt: 'css modules' },
+        { src: tailwindIcon, alt: 'tailwind css' },
         { src: jsIcon, alt: 'js' },
         { src: tsIcon, alt: 'ts' },
         { src: reactIcon, alt: 'react' },
+        { src: nextJsIcon, alt: 'next js' },
         { src: reduxIcon, alt: 'redux' },
         { src: chakraIcon, alt: 'chakra' },
     ];
